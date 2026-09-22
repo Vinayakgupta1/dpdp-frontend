@@ -1,0 +1,5 @@
+name = "dpdp-frontend"
+compatibility_date = "2026-09-22"
+
+# Static site built by the Git build pipeline (npm run build -> build/).
+assets = { directory = "./build" }
