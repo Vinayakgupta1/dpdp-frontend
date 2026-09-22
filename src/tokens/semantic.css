@@ -1,0 +1,85 @@
+:root {
+  /* ── Background Surfaces ── */
+  --ds-surface-0: rgba(255, 255, 255, 0.01);
+  --ds-surface-1: rgba(255, 255, 255, 0.02);
+  --ds-surface-2: rgba(255, 255, 255, 0.04);
+  --ds-surface-3: rgba(255, 255, 255, 0.06);
+  --ds-surface-4: rgba(255, 255, 255, 0.08);
+  --ds-surface-card-start: rgba(255, 255, 255, 0.05);
+  --ds-surface-card-end: rgba(255, 255, 255, 0.02);
+
+  /* ── Glass Surface ── */
+  --ds-glass-bg: rgba(255, 255, 255, 0.04);
+  --ds-glass-bg-light: rgba(255, 255, 255, 0.02);
+  --ds-glass-bg-hover: rgba(255, 255, 255, 0.06);
+  --ds-glass-blur: 16px;
+  --ds-glass-blur-light: 10px;
+  --ds-glass-saturate: 1.4;
+
+  /* ── Body ── */
+  --ds-color-body-text: #e2e8f0;
+
+  /* ── Cyber Background ── */
+  --ds-bg-cyber-spot-1: rgba(45, 212, 191, 0.18);
+  --ds-bg-cyber-spot-2: rgba(139, 92, 246, 0.08);
+  --ds-bg-cyber-spot-3: rgba(34, 211, 238, 0.06);
+  --ds-bg-cyber-gradient-start: rgba(5, 13, 24, 1);
+  --ds-bg-cyber-gradient-mid: rgba(7, 12, 22, 1);
+  --ds-bg-cyber-gradient-end: rgba(3, 8, 16, 1);
+  --ds-bg-cyber-grid: rgba(56, 189, 248, 0.15);
+  --ds-bg-cyber-grid-accent: rgba(34, 211, 238, 0.08);
+  --ds-bg-cyber-grid-size: 36px;
+
+  /* ── Text Colors ── */
+  --ds-color-text-primary: var(--ds-color-body-text);
+  --ds-color-text-secondary: #cbd5e1;
+  --ds-color-text-tertiary: #94a3b8;
+  --ds-color-text-muted: #64748b;
+
+  /* ── Accent Colors ── */
+  --ds-color-accent-primary: var(--ds-primitive-cyan-400);
+  --ds-color-accent-secondary: var(--ds-primitive-teal-400);
+  --ds-color-accent-tertiary: var(--ds-primitive-teal-300);
+  --ds-color-accent-gradient-from: var(--ds-primitive-cyan-300);
+  --ds-color-accent-gradient-to: var(--ds-primitive-teal-400);
+  --ds-color-accent-gradient-premium: linear-gradient(135deg, var(--ds-primitive-cyan-300), var(--ds-primitive-violet-400));
+
+  /* ── Status Colors ── */
+  --ds-color-success: var(--ds-primitive-emerald-400);
+  --ds-color-success-bg: rgba(52, 211, 153, 0.1);
+  --ds-color-warning: var(--ds-primitive-orange-400);
+  --ds-color-warning-bg: rgba(255, 138, 92, 0.1);
+  --ds-color-danger: var(--ds-primitive-red-500);
+  --ds-color-danger-bg: rgba(239, 68, 68, 0.1);
+  --ds-color-info: var(--ds-primitive-cyan-400);
+  --ds-color-info-bg: rgba(34, 211, 238, 0.1);
+  --ds-color-pending: var(--ds-primitive-amber-500);
+  --ds-color-pending-bg: rgba(245, 158, 11, 0.1);
+
+  /* ── Border Colors ── */
+  --ds-border-default: rgba(255, 255, 255, 0.08);
+  --ds-border-subtle: rgba(255, 255, 255, 0.04);
+  --ds-border-hover: rgba(255, 255, 255, 0.14);
+  --ds-border-active: rgba(34, 211, 238, 0.3);
+  --ds-border-navy: var(--ds-primitive-navy-600);
+  --ds-border-gradient: linear-gradient(135deg, rgba(34, 211, 238, 0.3), rgba(139, 92, 246, 0.2));
+
+  /* ── Scrollbar ── */
+  --ds-scrollbar-size: 4px;
+  --ds-scrollbar-track: transparent;
+  --ds-scrollbar-thumb: rgba(255, 255, 255, 0.12);
+  --ds-scrollbar-thumb-hover: rgba(255, 255, 255, 0.2);
+  --ds-scrollbar-thumb-radius: 2px;
+
+  /* ── Shadows ── */
+  --ds-shadow-elevation-low: var(--ds-primitive-shadow-card);
+  --ds-shadow-elevation-medium: var(--ds-primitive-shadow-card-hover);
+  --ds-shadow-elevation-high: var(--ds-primitive-shadow-panel);
+  --ds-shadow-glow-accent: var(--ds-primitive-shadow-glow-cyan);
+  --ds-shadow-glow-primary: var(--ds-primitive-shadow-glow-cyan-lg);
+  --ds-shadow-glow-premium: var(--ds-primitive-shadow-glow-cyan-xl);
+  --ds-shadow-glow-teal: var(--ds-primitive-shadow-glow-teal);
+  --ds-shadow-glow-violet: var(--ds-primitive-shadow-glow-violet);
+  --ds-shadow-glow-dot: var(--ds-primitive-shadow-cyan-dot);
+  --ds-shadow-glow-dot-lg: var(--ds-primitive-shadow-cyan-dot-lg);
+}

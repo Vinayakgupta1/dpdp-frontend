@@ -1,0 +1,90 @@
+:root {
+  /* ── Neutral Gray Scale ── */
+  --ds-primitive-neutral-100: #FAFAFA;
+  --ds-primitive-neutral-200: #F0F0F0;
+  --ds-primitive-neutral-300: #E0E0E0;
+  --ds-primitive-neutral-400: #BDBDBD;
+  --ds-primitive-neutral-500: #8C8C8C;
+  --ds-primitive-neutral-600: #5C5C5C;
+  --ds-primitive-neutral-700: #3D3D3D;
+  --ds-primitive-neutral-800: #2A2A2A;
+  --ds-primitive-neutral-900: #1A1A1A;
+
+  /* ── Navy Palette ── */
+  --ds-primitive-navy-950: #020507;
+  --ds-primitive-navy-925: #030914;
+  --ds-primitive-navy-900: #050A14;
+  --ds-primitive-navy-875: #060C18;
+  --ds-primitive-navy-850: #080F1E;
+  --ds-primitive-navy-825: #091120;
+  --ds-primitive-navy-800: #0A0F1C;
+  --ds-primitive-navy-775: #0C1320;
+  --ds-primitive-navy-750: #0E1625;
+  --ds-primitive-navy-725: #101A2A;
+  --ds-primitive-navy-700: #111827;
+  --ds-primitive-navy-675: #131D2D;
+  --ds-primitive-navy-650: #15212F;
+  --ds-primitive-navy-625: #1A2635;
+  --ds-primitive-navy-600: #1E2A3B;
+
+  /* ── Teal Accents ── */
+  --ds-primitive-teal-200: #7BFCEA;
+  --ds-primitive-teal-300: #33F5E0;
+  --ds-primitive-teal-400: #00E5CC;
+  --ds-primitive-teal-500: #00C4AE;
+  --ds-primitive-teal-600: #009B89;
+
+  /* ── Cyan Accents (primary interactive) ── */
+  --ds-primitive-cyan-200: #A5F3FC;
+  --ds-primitive-cyan-300: #67E8F9;
+  --ds-primitive-cyan-400: #22D3EE;
+  --ds-primitive-cyan-500: #06B6D4;
+  --ds-primitive-cyan-600: #0891B2;
+
+  /* ── Purple/Violet (added for 2026 premium feel) ── */
+  --ds-primitive-violet-300: #A78BFA;
+  --ds-primitive-violet-400: #8B5CF6;
+  --ds-primitive-violet-500: #7C3AED;
+  --ds-primitive-violet-600: #6D28D9;
+
+  /* ── Pink (accent for AI/ML features) ── */
+  --ds-primitive-pink-300: #F472B6;
+  --ds-primitive-pink-400: #EC4899;
+  --ds-primitive-pink-500: #DB2777;
+
+  /* ── Orange Accents (warning) ── */
+  --ds-primitive-orange-300: #FFA87D;
+  --ds-primitive-orange-400: #FF8A5C;
+  --ds-primitive-orange-500: #FF6B35;
+
+  /* ── Emerald Accents (success) ── */
+  --ds-primitive-emerald-300: #6EE7B7;
+  --ds-primitive-emerald-400: #34D399;
+  --ds-primitive-emerald-500: #10B981;
+  --ds-primitive-emerald-600: #059669;
+
+  /* ── Extended palette ── */
+  --ds-primitive-sky-400: #38BDF8;
+  --ds-primitive-blue-500: #3B82F6;
+  --ds-primitive-slate-100: #F1F5F9;
+  --ds-primitive-red-400: #F87171;
+  --ds-primitive-red-500: #EF4444;
+  --ds-primitive-red-600: #DC2626;
+  --ds-primitive-amber-400: #FBBF24;
+  --ds-primitive-amber-500: #F59E0B;
+  --ds-primitive-teal-grid: #2DD4BF;
+  --ds-primitive-blue-grid: #0EA5E9;
+  --ds-primitive-sky-grid: #38BDF8;
+
+  /* ── Shadow Values ── */
+  --ds-primitive-shadow-card: 0 4px 24px rgba(0, 0, 0, 0.3);
+  --ds-primitive-shadow-card-hover: 0 8px 40px rgba(0, 0, 0, 0.4);
+  --ds-primitive-shadow-panel: 0 12px 48px rgba(0, 0, 0, 0.4);
+  --ds-primitive-shadow-glow-cyan: 0 0 30px rgba(34, 211, 238, 0.15);
+  --ds-primitive-shadow-glow-cyan-lg: 0 0 60px rgba(34, 211, 238, 0.12);
+  --ds-primitive-shadow-glow-cyan-xl: 0 0 80px rgba(34, 211, 238, 0.08);
+  --ds-primitive-shadow-glow-teal: 0 0 30px rgba(0, 229, 204, 0.15);
+  --ds-primitive-shadow-glow-violet: 0 0 30px rgba(139, 92, 246, 0.12);
+  --ds-primitive-shadow-cyan-dot: 0 0 8px rgba(34, 211, 238, 0.4);
+  --ds-primitive-shadow-cyan-dot-lg: 0 0 16px rgba(34, 211, 238, 0.3);
+}

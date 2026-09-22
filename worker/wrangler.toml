@@ -1,0 +1,10 @@
+name = "dpdp-sentinel-intake"
+main = "src/index.js"
+compatibility_date = "2026-09-21"
+
+[[r2_buckets]]
+binding = "SUBMISSIONS_BUCKET"
+bucket_name = "dpdp-sentinel-submissions"
+
+[observability]
+enabled = true

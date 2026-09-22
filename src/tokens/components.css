@@ -1,0 +1,42 @@
+:root {
+  /* ── Glass Panel ── */
+  --ds-glass-bg-opacity: 0.8;
+  --ds-glass-border-color: var(--ds-border-default);
+  --ds-glass-border-light-color: var(--ds-border-subtle);
+  --ds-glass-hover-border-color: var(--ds-border-hover);
+
+  /* ── Card ── */
+  --ds-card-bg-start: var(--ds-surface-card-start);
+  --ds-card-bg-end: var(--ds-surface-card-end);
+  --ds-card-border: var(--ds-border-default);
+  --ds-card-radius: 0.875rem;
+  --ds-card-shadow: var(--ds-shadow-elevation-low);
+  --ds-card-shadow-hover: var(--ds-shadow-elevation-medium);
+  --ds-card-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── Button ── */
+  --ds-btn-primary-bg: linear-gradient(135deg, var(--ds-primitive-cyan-400), var(--ds-primitive-teal-400));
+  --ds-btn-primary-text: var(--ds-primitive-navy-950);
+  --ds-btn-primary-hover: linear-gradient(135deg, var(--ds-primitive-cyan-300), var(--ds-primitive-teal-300));
+  --ds-btn-primary-shadow: 0 4px 20px rgba(34, 211, 238, 0.25);
+  --ds-btn-secondary-bg: transparent;
+  --ds-btn-secondary-border: var(--ds-border-default);
+  --ds-btn-secondary-hover-bg: rgba(34, 211, 238, 0.06);
+
+  /* ── Navbar ── */
+  --ds-nav-bg: rgba(5, 10, 20, 0.85);
+  --ds-nav-border: var(--ds-border-subtle);
+  --ds-nav-item-active: var(--ds-color-accent-primary);
+  --ds-nav-item-hover: rgba(255, 255, 255, 0.05);
+
+  /* ── ScoreGauge ── */
+  --ds-gauge-stroke-danger: var(--ds-color-danger);
+  --ds-gauge-stroke-warning: var(--ds-color-warning);
+  --ds-gauge-stroke-success: var(--ds-color-success);
+  --ds-gauge-track: rgba(255, 255, 255, 0.06);
+
+  /* ── Scrollbar ── */
+  --ds-scrollbar-width: var(--ds-scrollbar-size);
+  --ds-scrollbar-thumb-bg: var(--ds-scrollbar-thumb);
+  --ds-scrollbar-thumb-hover-bg: var(--ds-scrollbar-thumb-hover);
+}

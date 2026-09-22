@@ -1,0 +1,191 @@
+@import "./tokens/primitives.css";
+@import "./tokens/semantic.css";
+@import "./tokens/components.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  font-size: 13.5px;
+  letter-spacing: -0.01em;
+  line-height: 1.45;
+  background: #000000;
+  color: var(--ds-color-body-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.25);
+  color: #e2e8f0;
+}
+
+/* ── Cyber Background (enhanced with animated particles and scan-line) ── */
+.cyber-bg {
+  position: relative;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 85% -5%, var(--ds-bg-cyber-spot-1), transparent 40%),
+    radial-gradient(circle at 20% 80%, var(--ds-bg-cyber-spot-2), transparent 40%),
+    radial-gradient(circle at 50% 50%, var(--ds-bg-cyber-spot-3), transparent 50%),
+    linear-gradient(180deg, var(--ds-bg-cyber-gradient-start), var(--ds-bg-cyber-gradient-mid), var(--ds-bg-cyber-gradient-end));
+}
+
+.cyber-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.12;
+  background-image:
+    linear-gradient(var(--ds-bg-cyber-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--ds-bg-cyber-grid) 1px, transparent 1px);
+  background-size: var(--ds-bg-cyber-grid-size) var(--ds-bg-cyber-grid-size);
+}
+
+/* Scanning line animation — sweeps top to bottom like a radar */
+.cyber-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(34, 211, 238, 0.03) 45%,
+    rgba(34, 211, 238, 0.06) 48%,
+    rgba(34, 211, 238, 0.08) 50%,
+    rgba(34, 211, 238, 0.06) 52%,
+    rgba(34, 211, 238, 0.03) 55%,
+    transparent 100%
+  );
+  animation: scanLine 8s ease-in-out infinite;
+}
+
+@keyframes scanLine {
+  0%, 100% { transform: translateY(-100%); }
+  50% { transform: translateY(100vh); }
+}
+
+/* Floating particle dots on the grid */
+.cyber-bg .cyber-particle {
+  position: fixed;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: var(--ds-primitive-cyan-400);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  box-shadow: 0 0 4px var(--ds-primitive-cyan-400), 0 0 8px rgba(34, 211, 238, 0.3);
+  animation: particleFloat 12s infinite;
+}
+
+/* ── Glass Panel (enhanced) ── */
+.glass-panel {
+  background: var(--ds-glass-bg);
+  backdrop-filter: blur(var(--ds-glass-blur)) saturate(var(--ds-glass-saturate));
+  -webkit-backdrop-filter: blur(var(--ds-glass-blur)) saturate(var(--ds-glass-saturate));
+  border: 1px solid var(--ds-glass-border-color);
+  box-shadow: var(--ds-shadow-elevation-high);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-panel:hover {
+  border-color: var(--ds-glass-hover-border-color);
+}
+
+.glass-panel-light {
+  background: var(--ds-glass-bg-light);
+  backdrop-filter: blur(var(--ds-glass-blur-light)) saturate(1.2);
+  -webkit-backdrop-filter: blur(var(--ds-glass-blur-light)) saturate(1.2);
+  border: 1px solid var(--ds-glass-border-light-color);
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.glass-panel-light:hover {
+  background: var(--ds-glass-bg-hover);
+  border-color: var(--ds-glass-hover-border-color);
+}
+
+/* ── Gradient Border (pseudo-element) ── */
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: var(--ds-border-gradient);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-cyan-300 to-teal-400 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-premium {
+    @apply bg-gradient-to-r from-cyan-300 via-teal-300 to-violet-400 bg-clip-text text-transparent;
+  }
+
+  .card-gradient {
+    background: linear-gradient(135deg, var(--ds-surface-card-start), var(--ds-surface-card-end));
+  }
+
+  .card-gradient-hover {
+    background: linear-gradient(135deg, rgba(34, 211, 238, 0.06), rgba(139, 92, 246, 0.04));
+  }
+
+  .glow-accent {
+    box-shadow: var(--ds-shadow-glow-accent);
+  }
+
+  .glow-premium {
+    box-shadow: var(--ds-shadow-glow-premium);
+  }
+
+  .border-gradient {
+    border-image: var(--ds-border-gradient) 1;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: var(--ds-scrollbar-size);
+    height: var(--ds-scrollbar-size);
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: var(--ds-scrollbar-track);
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: var(--ds-scrollbar-thumb);
+    border-radius: var(--ds-scrollbar-thumb-radius);
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: var(--ds-scrollbar-thumb-hover);
+  }
+}
